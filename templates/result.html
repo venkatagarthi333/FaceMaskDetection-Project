@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>FaceMask Detection Result</h1>
+    
+    {% if result %}
+        <h2>{{ result }}</h2>
+    {% endif %}
+    
+    <a href="{{ url_for('index') }}">Go back to upload another image</a>
+</body>
+</html>
